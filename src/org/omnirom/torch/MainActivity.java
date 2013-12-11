@@ -38,12 +38,14 @@ import android.view.Window;
 import android.view.WindowManager;
 import android.widget.ImageView;
 import android.util.Log;
+import android.widget.LinearLayout;
 
 public class MainActivity extends Activity {
 	private static final String TAG = "TorchActivity";
 	
 	private TorchWidgetProvider mWidgetProvider;
 	private ImageView mButtonOnView;
+        private LinearLayout mBackgroundView;
 	private ImageView mButtonSosView;
 	private boolean mTorchOn;
 	private Context mContext;
