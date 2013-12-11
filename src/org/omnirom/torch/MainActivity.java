@@ -163,6 +163,9 @@ public class MainActivity extends Activity {
 
 	private void updateBigButtonState() {
 		mButtonOnView.setImageResource(mTorchOn ? R.drawable.button_off : R.drawable.button_on);
+                mBackgroundView.setBackground(mTorchOn 
+				? this.getResources().getDrawable(R.drawable.background_on) 
+				: this.getResources().getDrawable(R.drawable.background_off));
 	}
 
 	private BroadcastReceiver mStateReceiver = new BroadcastReceiver() {
