@@ -76,6 +76,8 @@ public class MainActivity extends Activity {
 				createIntent();
 			}
 		});
+
+                mBackgroundView = (LinearLayout) findViewById(R.id.background);
 		
 		mTorchOn = false;
 		mWidgetProvider = TorchWidgetProvider.getInstance();
