@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!--   
+<!--
   Copyright (C) 2013 The OmniROM Project
  
   This program is free software: you can redistribute it and/or modify
@@ -16,28 +16,37 @@
   along with this program.  If not, see <http://www.gnu.org/licenses/>.
 -->
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:background="@drawable/background_off" >
-
-    <ImageView
-        android:id="@+id/spacer1"
-        android:layout_weight="0.5"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"/>
-
-    <ImageView
-         android:id="@+id/buttoOnImage"
-         android:layout_width="wrap_content"
-         android:layout_height="wrap_content"
-         android:layout_gravity="center"
-         android:src="@drawable/button_on" />
-
-    <ImageView
-        android:id="@+id/spacer2"
-        android:layout_weight="0.5"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"/>
-
+	android:id="@+id/background"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:background="@drawable/background_off"
+	android:orientation="vertical" >
+	<ImageView
+		android:id="@+id/buttoSosImage"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_gravity="end"
+		android:src="@drawable/button_sos" />
+        <ImageView
+        	 android:id="@+id/buttoOnImage"
+        	 android:layout_width="wrap_content"
+        	 android:layout_height="wrap_content"
+         	android:layout_gravity="center"
+                android:src="@drawable/button_on" />
+	<ImageView
+		android:id="@+id/spacer1"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_weight="0.9" />
+	<ImageView
+		android:id="@+id/button"
+		android:layout_width="80dip"
+		android:layout_height="80dip"
+		android:layout_gravity="center"
+		android:src="@drawable/button_off" />
+	<ImageView
+		android:id="@+id/spacer2"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_weight="0.1" />
 </LinearLayout>
