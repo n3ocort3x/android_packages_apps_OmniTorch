@@ -69,7 +69,7 @@ public class MainActivity extends Activity {
 		}
 		setContentView(R.layout.mainnew);
 		mContext = this.getApplicationContext();
-		mButtonOnView = (ImageView) findViewById(R.id.buttoOnImage);
+		mButtonOnView = (ImageView) findViewById(R.id.button);
 
 		mButtonOnView.setOnClickListener(new OnClickListener() {
 			public void onClick(View v) {
